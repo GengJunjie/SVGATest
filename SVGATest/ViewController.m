@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) SVGAPlayer *aPlayer;
 
+@property (nonatomic, copy) NSString *name;
+
 
 @end
 
@@ -46,25 +48,25 @@ static SVGAParser *parser;
 //                       @"https://github.com/yyued/SVGA-Samples/blob/master/posche.svga?raw=true",
 //                       @"https://github.com/yyued/SVGA-Samples/blob/master/rose.svga?raw=true",
 //                       ];
-//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-//    [parser parseWithURL:[NSURL URLWithString:items[arc4random() % 10]]
-//         completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
-//             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-//             if (videoItem != nil) {
-//                 self.aPlayer.videoItem = videoItem;
-//                 [self.aPlayer startAnimation];
-//             }
-//         } failureBlock:nil];
-    [parser parseWithNamed:@"q"
-                  inBundle:[NSBundle mainBundle]
-           completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
-               if (videoItem != nil) {
-                   self.aPlayer.videoItem = videoItem;
-                   [self.aPlayer startAnimation];
-               }
-           } failureBlock:^(NSError * _Nonnull error) {
-               
-           }];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [parser parseWithURL:[NSURL URLWithString:@"http://img-live.lespark.cn/%E6%91%A9%E6%89%98.svga"]
+         completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
+             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+             if (videoItem != nil) {
+                 self.aPlayer.videoItem = videoItem;
+                 [self.aPlayer startAnimation];
+             }
+         } failureBlock:nil];
+//    [parser parseWithNamed:@"q"
+//                  inBundle:[NSBundle mainBundle]
+//           completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
+//               if (videoItem != nil) {
+//                   self.aPlayer.videoItem = videoItem;
+//                   [self.aPlayer startAnimation];
+//               }
+//           } failureBlock:^(NSError * _Nonnull error) {
+//
+//           }];
 }
 
 - (SVGAPlayer *)aPlayer {

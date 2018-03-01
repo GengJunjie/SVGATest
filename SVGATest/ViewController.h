@@ -11,5 +11,8 @@
 @interface ViewController : UIViewController
 
 
+@property (nonatomic, copy, readonly) NSString *name;
+
+
 @end
 
