@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1069EC05812B987768DE45 /* Pods_SVGATest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB4E9BFABC9C8599F27BD65 /* Pods_SVGATest.framework */; };
+		8A617287204788730081B0DD /* q.svga in Resources */ = {isa = PBXBuildFile; fileRef = 8A617286204788730081B0DD /* q.svga */; };
 		8AE05EA7204683AE00787168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE05EA6204683AE00787168 /* AppDelegate.m */; };
 		8AE05EAA204683AE00787168 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE05EA9204683AE00787168 /* ViewController.m */; };
 		8AE05EAD204683AE00787168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE05EAB204683AE00787168 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74D15C396B4F2486179CFBFB /* Pods-SVGATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGATest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SVGATest/Pods-SVGATest.release.xcconfig"; sourceTree = "<group>"; };
+		8A617286204788730081B0DD /* q.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = q.svga; sourceTree = "<group>"; };
 		8AE05EA2204683AE00787168 /* SVGATest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVGATest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE05EA5204683AE00787168 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AE05EA6204683AE00787168 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		8AE05EC5204683AE00787168 /* SVGATestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SVGATestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE05EC9204683AE00787168 /* SVGATestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGATestUITests.m; sourceTree = "<group>"; };
 		8AE05ECB204683AE00787168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD8C9FA5785257513610693 /* Pods-SVGATest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGATest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVGATest/Pods-SVGATest.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB4E9BFABC9C8599F27BD65 /* Pods_SVGATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVGATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1069EC05812B987768DE45 /* Pods_SVGATest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42DD936AB3D17A3B456DC312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4E9BFABC9C8599F27BD65 /* Pods_SVGATest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AE05E99204683AE00787168 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				8AE05EBD204683AE00787168 /* SVGATestTests */,
 				8AE05EC8204683AE00787168 /* SVGATestUITests */,
 				8AE05EA3204683AE00787168 /* Products */,
+				EC54B9F1195E0B587326A976 /* Pods */,
+				42DD936AB3D17A3B456DC312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +118,7 @@
 		8AE05EA4204683AE00787168 /* SVGATest */ = {
 			isa = PBXGroup;
 			children = (
+				8A617286204788730081B0DD /* q.svga */,
 				8AE05EA5204683AE00787168 /* AppDelegate.h */,
 				8AE05EA6204683AE00787168 /* AppDelegate.m */,
 				8AE05EA8204683AE00787168 /* ViewController.h */,
@@ -132,6 +150,15 @@
 			path = SVGATestUITests;
 			sourceTree = "<group>";
 		};
+		EC54B9F1195E0B587326A976 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8C9FA5785257513610693 /* Pods-SVGATest.debug.xcconfig */,
+				74D15C396B4F2486179CFBFB /* Pods-SVGATest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AE05ECE204683AE00787168 /* Build configuration list for PBXNativeTarget "SVGATest" */;
 			buildPhases = (
+				18AC073F622A21AF6BF9276A /* [CP] Check Pods Manifest.lock */,
 				8AE05E9E204683AE00787168 /* Sources */,
 				8AE05E9F204683AE00787168 /* Frameworks */,
 				8AE05EA0204683AE00787168 /* Resources */,
+				583FE4E441532494957398F5 /* [CP] Embed Pods Frameworks */,
+				6E06885C76A2E33E628C3E32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +270,7 @@
 			files = (
 				8AE05EB2204683AE00787168 /* LaunchScreen.storyboard in Resources */,
 				8AE05EAF204683AE00787168 /* Assets.xcassets in Resources */,
+				8A617287204788730081B0DD /* q.svga in Resources */,
 				8AE05EAD204683AE00787168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +290,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18AC073F622A21AF6BF9276A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SVGATest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583FE4E441532494957398F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SVGATest/Pods-SVGATest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SVGAPlayer/SVGAPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGAPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVGATest/Pods-SVGATest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E06885C76A2E33E628C3E32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVGATest/Pods-SVGATest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AE05E9E204683AE00787168 /* Sources */ = {
@@ -428,6 +517,7 @@
 		};
 		8AE05ECF204683AE00787168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD8C9FA5785257513610693 /* Pods-SVGATest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +531,7 @@
 		};
 		8AE05ED0204683AE00787168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D15C396B4F2486179CFBFB /* Pods-SVGATest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
