@@ -25,6 +25,7 @@ static SVGAParser *parser;
 - (void)viewDidLoad {
     [super viewDidLoad];
     ////111
+    ///1234
     self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.aPlayer];
     self.aPlayer.delegate = self;
